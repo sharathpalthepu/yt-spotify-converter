@@ -1,0 +1,9 @@
+fastapi
+aiofiles
+spotipy
+uvicorn
+jinja2
+deta
+python-dotenv
+python-multipart
+feedparser
