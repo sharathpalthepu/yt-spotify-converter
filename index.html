@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎶</text></svg>"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <title>YouTube to Spotify Playlist</title>
+</head>
+
+<body>
+    <nav class="header">
+        <h1>
+            YouTube ⏩ Spotify Playlist 🤘🏿
+        </h1>
+        <h1>
+            Github
+        </h1>
+    </nav>
+    <h2>
+        Convert a youtube playlist to spotify. Enter a youtube playlist link and submit. If the app can't find a same
+        song in spotify, it simply ignores it.
+    </h2>
+    <form action="/make" method="POST">
+        <input type="text" name="name" placeholder="Name Of Playlist">
+        <input type="text" name="link" placeholder="https://www.youtube.com/playlist?list=PLAYLIST_ID">
+        <input type="submit" name="submit" value="Go 🚀">
+    </form>
+
+</body>
+<style>
+    :root {
+        --color-bg: #151415;
+        --color-text-main: #FFFFFF;
+        --font-family: "IBM Plex Mono", monospace;
+        --font-family-header: "IBM Plex Mono", monospace;
+    }
+
+    body {
+        color: var(--color-text-main);
+        font-family: var(--font-family);
+        background-color: var(--color-bg);
+
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 10px;
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    form {
+        display: flex;
+        height: 82px;
+    }
+    a {
+        color: white;
+        font-weight: 600;
+    }
+    input {
+        background-color: #444;
+        color: #fff;
+        border: 1px solid #000;
+        width: 100%;
+        padding: 2rem 2rem 1.8rem;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        font-size: 24px;
+        max-width: 800px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        width: 25%;
+    }
+</style>
+
+</html>
